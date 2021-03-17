@@ -1,0 +1,98 @@
+body {
+  margin: 10px 10%;
+  background-color: darkslategray;
+  min-width: 900px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'section main right' 'section main right' 'section main right' 'section main right';
+  grid-gap: 10px;
+}
+
+section {
+  width: 40%;
+}
+
+main {
+  width: 10%;
+}
+
+right {
+  width: 40%;
+}
+
+#text-title {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-size: 10px;
+  top: 15px;
+  left: 20px;
+  text-align: left;
+}
+
+#content-box {
+  position: relative;
+  color: rgba(0, 0, 0, 0.678);
+  left: 10px;
+}
+
+.top-shape-right {
+  -webkit-clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 3% 100%, 3% 50%, 0% 40%, 3% 30%);
+          clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 3% 100%, 3% 50%, 0% 40%, 3% 30%);
+  background-color: red;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px 5px 0 0;
+}
+
+.top-shape-left {
+  -webkit-clip-path: polygon(0% 0%, 97% 0%, 97% 30%, 100% 40%, 97% 50%, 97% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 97% 0%, 97% 30%, 100% 40%, 97% 50%, 97% 100%, 0% 100%);
+  background-color: blue;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px 5px 0 0;
+}
+
+.under-shape-right {
+  margin-left: 9px;
+  background-color: white;
+  width: 271px;
+  border-radius: 0px 0px 5px 5px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.under-shape-left {
+  margin-right: 9px;
+  background-color: white;
+  width: 271px;
+  border-radius: 0px 0px 5px 5px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.empty-text {
+  margin-bottom: 145px;
+}
+
+.circle {
+  border: 1px solid #898c97d8;
+  border-radius: 50%;
+  height: 61px;
+  width: 61px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #898c97d8;
+  text-align: center;
+}
+
+.line {
+  position: relative;
+  width: 0;
+  border: 1px solid #898c97d8;
+  height: 81px;
+  left: 30px;
+}
+/*# sourceMappingURL=style4.css.map */

@@ -1,55 +1,96 @@
-body {
-  margin: 10px 20px;
-  background-color: darkslategray;
-}
-
 @mixin top-shape {
-  width: 300px;
-  height: 50px;
-  border-radius: 5px 5px 0 0;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px 5px 0 0;
 }
 
 @mixin under-shape {
-  background-color: white;
-  width: 291px;
-  height: 75px;
-  border-radius: 0px 0px 5px 5px;
+    background-color: white;
+    width: 271px;
+    border-radius: 0px 0px 5px 5px;
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
 
-.title {
-  position: relative;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
-  font-size: 10px;
-  text-aligh: left;
+body {
+    margin: 10px 10%;
+    background-color: darkslategray;
+    min-width: 900px;
+    display: grid;
+    grid-template-areas: 'section main right' 'section main right' 'section main right' 'section main right';
+    grid-gap: 10px;
 }
 
-.top-shape-left {
-  clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 3% 100%, 3% 50%, 0% 40%, 3% 30%);
-  background-color: red;
-  @include top-shape;
+section {
+    width: 40%;
+}
+
+main {
+    width: 10%;
+}
+
+right {
+    width: 40%;
+}
+
+#text-title {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 10px;
+    top: 15px;
+    left: 20px;
+    text-align: left;
+}
+
+#content-box {
+    position: relative;
+    color: rgba(0, 0, 0, 0.678);
+    left: 10px;
 }
 
 .top-shape-right {
-  clip-path: polygon(0% 0%, 97% 0%, 97% 30%, 100% 40%, 97% 50%, 97% 100%, 0% 100%);
-  background-color: blue;
-  @include top-shape;
+    clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 3% 100%, 3% 50%, 0% 40%, 3% 30%);
+    background-color: red;
+    @include top-shape;
 }
 
-.under-shape-left{
-  margin-left: 9px;
-  @include under-shape;
+.top-shape-left {
+    clip-path: polygon(0% 0%, 97% 0%, 97% 30%, 100% 40%, 97% 50%, 97% 100%, 0% 100%);
+    background-color: blue;
+    @include top-shape;
 }
 
-.under-shape-right{
-  margin-right: 9px;
-  @include under-shape;
+.under-shape-right {
+    margin-left: 9px;
+    @include under-shape;
 }
 
-.circle-shape {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  border-color: darkgray;
+.under-shape-left {
+    margin-right: 9px;
+    @include under-shape;
+}
+
+.empty-text {
+    margin-bottom: 145px;
+}
+
+.circle {
+    border: 1px solid #898c97d8;
+    border-radius: 50%;
+    height: 61px;
+    width: 61px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #898c97d8;
+    text-align: center;
+}
+
+.line {
+    position: relative;
+    width: 0;
+    border: 1px solid #898c97d8;
+    height: 81px;
+    left: 30px;
 }

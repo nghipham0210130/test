@@ -1,54 +1,55 @@
 body {
-  margin: 10px 20px;
-  background-color: darkslategray;
+    margin: 10px 20px;
+    background-color: darkslategray;
 }
 
-.title {
-  position: relative;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
-  font-size: 10px;
-  text-aligh: left;
+.text-title {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 10px;
+    padding: 20px;
 }
 
 .top-shape-left {
-  clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 3% 100%, 3% 50%, 0% 40%, 3% 30%);
-  background-color: red;
-  width: 300px;
-  height: 50px;
-  border-radius: 5px 5px 0 0;
+    clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 3% 100%, 3% 50%, 0% 40%, 3% 30%);
+    background-color: red;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px 5px 0 0;
 }
 
 .top-shape-right {
-  clip-path: polygon(0% 0%, 97% 0%, 97% 30%, 100% 40%, 97% 50%, 97% 100%, 0% 100%);
-  background-color: blue;
-  width: 300px;
-  height: 50px;
-  border-radius: 5px 5px 0 0;
+    clip-path: polygon(0% 0%, 97% 0%, 97% 30%, 100% 40%, 97% 50%, 97% 100%, 0% 100%);
+    background-color: blue;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px 5px 0 0;
 }
 
 .under-shape-left {
-  margin-left: 9px;
-  background-color: white;
-  width: 291px;
-  height: 75px;
-  border-radius: 0px 0px 5px 5px;
+    margin-left: 9px;
+    background-color: white;
+    width: 291px;
+    height: 75px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .under-shape-right {
-  margin-right: 9px;
-  background-color: white;
-  width: 291px;
-  height: 75px;
-  border-radius: 0px 0px 5px 5px;
+    margin-right: 9px;
+    background-color: white;
+    width: 291px;
+    height: 75px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .circle-shape {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  border-color: darkgray;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border-color: darkgray;
 }
+
 
 /*# sourceMappingURL=style4.css.map */
