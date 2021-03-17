@@ -1,0 +1,37 @@
+body {
+    margin: 20px 35%;
+}
+
+img {
+    width: 8vh;
+}
+
+.gird-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.grid-item-left {
+    text-align: right;
+}
+
+.grid-item-center {
+    text-align: center;
+    width: 35vh;
+}
+
+.grid-item-right {
+    text-align: left;
+}
+
+
+.grid-item-center  span{
+    border-bottom: 3px solid #ff6724;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    color: grey;
+}
+
+#icon-right {
+    transform: scaleX(-1);
+}
