@@ -1,23 +1,29 @@
-body {
+.container {
     border: 1px solid;
-    margin: 2px 20px;
-    padding: 20px;
-    height: auto;
     box-sizing: border-box;
 }
 
 img {
     position: relative;
-    margin: 20px 20px 20px 0;
+    margin: 21px 20px 20px 0;
     float: left;
     width: 48%;
-    max-height: 250px;
 }
 
 p {
     font-family: "Times New Roman";
 }
 
-span {
-    font-weight: bolder;
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .container {
+        font-size: 12px;
+    }
+}
+
+/* For PC: */
+@media only screen and (min-width: 768px) {
+    .container {
+        font-size: 16px;
+    }
 }

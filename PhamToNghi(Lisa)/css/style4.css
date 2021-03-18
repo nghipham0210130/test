@@ -1,55 +1,113 @@
 body {
-    margin: 10px 20px;
-    background-color: darkslategray;
+  margin: 10px 10%;
+  background-color: darkslategray;
+  min-width: 900px;
+  display: grid;
+  grid-template-areas: "section main right" "section main right" "section main right" "section main right";
+  grid-gap: 10px;
+}
+
+section {
+  padding-top: 20px;
+  width: 40%;
+}
+
+main {
+  padding-top: 20px;
+  width: 10%;
+}
+
+right {
+  padding-top: 20px;
+  width: 40%;
 }
 
 .text-title {
-    position: relative;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    font-size: 10px;
-    padding: 20px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-size: 10px;
+  top: 15px;
+  left: 20px;
+  text-align: left;
 }
 
-.top-shape-left {
-    clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 3% 100%, 3% 50%, 0% 40%, 3% 30%);
-    background-color: red;
-    width: 300px;
-    height: 50px;
-    border-radius: 5px 5px 0 0;
+.content-box {
+  position: relative;
+  color: black;
+  left: 10px;
 }
 
-.top-shape-right {
-    clip-path: polygon(0% 0%, 97% 0%, 97% 30%, 100% 40%, 97% 50%, 97% 100%, 0% 100%);
-    background-color: blue;
-    width: 300px;
-    height: 50px;
-    border-radius: 5px 5px 0 0;
+.shape-top-right {
+  clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 3% 100%, 3% 50%, 0% 40%, 3% 30%);
+  width: 300px;
+  height: 50px;
+  border-radius: 5px 5px 0 0;
 }
 
-.under-shape-left {
-    margin-left: 9px;
-    background-color: white;
-    width: 291px;
-    height: 75px;
-    border-radius: 0px 0px 5px 5px;
+.shape-top-left {
+  clip-path: polygon(0% 0%, 97% 0%, 97% 30%, 100% 40%, 97% 50%, 97% 100%, 0% 100%);
+  width: 300px;
+  height: 50px;
+  border-radius: 5px 5px 0 0;
 }
 
-.under-shape-right {
-    margin-right: 9px;
-    background-color: white;
-    width: 291px;
-    height: 75px;
-    border-radius: 0px 0px 5px 5px;
+.shape-under-right {
+  margin-left: 9px;
+  background-color: white;
+  width: 271px;
+  border-radius: 0px 0px 5px 5px;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
 
-.circle-shape {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    border-color: darkgray;
+.shape-under-left {
+  margin-right: 9px;
+  background-color: white;
+  width: 271px;
+  border-radius: 0px 0px 5px 5px;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
 
+.empty-text {
+  margin-bottom: 178px;
+}
+
+.circle {
+  border: 1px solid #898c97d8;
+  border-radius: 50%;
+  height: 61px;
+  width: 61px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #898c97d8;
+  text-align: center;
+}
+
+.line {
+  position: relative;
+  width: 0;
+  border: 1px solid #898c97d8;
+  height: 72px;
+  left: 30px;
+}
+
+.shape-top-left--red {
+  background-color: rgba(212, 61, 61, 0.829);
+}
+
+.shape-top-left--orange {
+  background-color: #cf6f15;
+}
+
+.shape-top-right--lightgreen {
+  background-color: rgba(43, 134, 34, 0.747);
+}
+
+.shape-top-right--darkgreen {
+  background-color: rgba(5, 150, 126, 0.801);
+}
 
 /*# sourceMappingURL=style4.css.map */

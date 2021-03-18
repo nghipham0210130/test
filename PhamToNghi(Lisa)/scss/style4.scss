@@ -1,3 +1,11 @@
+$grey: #898c97d8;
+$red: rgba(212, 61, 61, 0.829);
+$orange: rgb(207, 111, 21);
+$lightgreen: rgba(43, 134, 34, 0.747);
+$darkgreen: rgba(5, 150, 126, 0.801);
+$darkslategray: #2f4f4f;
+
+
 @mixin top-shape {
     width: 300px;
     height: 50px;
@@ -22,18 +30,22 @@ body {
 }
 
 section {
+    padding-top: 20px;
     width: 40%;
+
 }
 
 main {
+    padding-top: 20px;
     width: 10%;
 }
 
 right {
+    padding-top: 20px;
     width: 40%;
 }
 
-#text-title {
+.text-title {
     position: relative;
     text-transform: uppercase;
     font-weight: bold;
@@ -44,53 +56,67 @@ right {
     text-align: left;
 }
 
-#content-box {
+.content-box {
     position: relative;
-    color: rgba(0, 0, 0, 0.678);
+    color: black;
     left: 10px;
 }
 
-.top-shape-right {
+.shape-top-right {
     clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 3% 100%, 3% 50%, 0% 40%, 3% 30%);
-    background-color: red;
     @include top-shape;
 }
 
-.top-shape-left {
+.shape-top-left {
     clip-path: polygon(0% 0%, 97% 0%, 97% 30%, 100% 40%, 97% 50%, 97% 100%, 0% 100%);
-    background-color: blue;
     @include top-shape;
 }
 
-.under-shape-right {
+.shape-under-right {
     margin-left: 9px;
     @include under-shape;
 }
 
-.under-shape-left {
+.shape-under-left {
     margin-right: 9px;
     @include under-shape;
 }
 
 .empty-text {
-    margin-bottom: 145px;
+    margin-bottom: 178px;
 }
 
 .circle {
-    border: 1px solid #898c97d8;
+    border: 1px solid $grey;
     border-radius: 50%;
     height: 61px;
     width: 61px;
     text-transform: uppercase;
     font-weight: bold;
-    color: #898c97d8;
+    color: $grey;
     text-align: center;
 }
 
 .line {
     position: relative;
     width: 0;
-    border: 1px solid #898c97d8;
-    height: 81px;
+    border: 1px solid $grey;
+    height: 72px;
     left: 30px;
+}
+
+.shape-top-left--red {
+    background-color: $red;
+}
+
+.shape-top-left--orange {
+    background-color: $orange;
+}
+
+.shape-top-right--lightgreen {
+    background-color: $lightgreen;
+}
+
+.shape-top-right--darkgreen {
+    background-color: $darkgreen;
 }
